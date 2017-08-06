@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ajaymehta.xmldesign3.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="#fffac0"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@android:drawable/ic_menu_camera"/>
+
+            <!--it has gravity property make width matchparent
+            n use gravity to make it in center-->
+
+            <TextView
+                android:gravity="center"
+                android:layout_below="@+id/iv_camera"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                android:text="Take Photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="#b2ff9a"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/choose_photo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@android:drawable/ic_menu_gallery"/>
+
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_below="@+id/choose_photo"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                android:text="Choose Photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/relative_circular_back"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="Or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

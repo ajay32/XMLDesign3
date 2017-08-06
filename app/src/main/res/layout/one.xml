@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ajaymehta.xmldesign3.MainActivity">
+
+    <!--why we taking relative layout is because like frame layout
+    you can put more layout n compnents on each other ..
+    to equally divide two relative layout we using weight
+    height is 0dp ..you could take match parent as well ..
+    but its called redudandant ..not more prefereable..-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:background="#fffac0"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#b2ff9a"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </RelativeLayout>
+
+    </LinearLayout> <!-- end of linearlayout-->
+
+    <!--we have to put this layout at the center of both the
+    layouts  so property centerInParent -->
+
+    <RelativeLayout
+        android:background="@drawable/relative_circular_back"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+    </RelativeLayout>
+
+</RelativeLayout>
